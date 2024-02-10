@@ -87,7 +87,7 @@ a {
 /* Style the links inside the navigation bar */
 .nav a{
   display: inline-block;
-  min-width: 15px;
+  width: 15px;
   color: #cfd5dc;
   background-color: rgb(95, 109, 175);
   text-align: center;
