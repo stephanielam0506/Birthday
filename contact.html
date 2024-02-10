@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.cdnfonts.com/css/noto-sans-thaana" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    </head>
+
+      <body onload="startTime()">
+        <header>
+            <h1>
+                MOM's birthday
+            </h1>
+            <p id="date">FEB 10, 2024 </p>
+            <div id="txt"></div>
+            <script>
+                function startTime() {
+                  const today = new Date();
+                  let h = today.getHours();
+                  let m = today.getMinutes();
+                  let s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                  setTimeout(startTime, 1000);
+                }
+                
+                function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+                }
+            </script>
+
+        </header>
+
+        <main>
+            <nav>
+                <div class="nav" id="myNav">
+                    <a class='button' href="index.html">Overview</a>
+                    <a class='more' href="image.html">Images</a>
+                    <a class='button' href="words.html">Words</a>
+                    <a class='button' href="contact.html">Contact</a>
+                </div>                       
+            </nav>
+
+            <p> What???? Whose contact do you wanna find?</p>
+            <p class="hit"> JUST HIT ME UP!!!!</p>
+
+            
+        </main>
+      </body>
+      <footer>
+        <span>
+            <div class="footcontainer">
+
+                <div class="foot">
+                    Feedback?
+                    <a  href="">Press here.</a>
+                </div> 
+                <p class="foot">© 2024 Copyright: Stephanie Lam</p>
+
+                <p class="foot">
+                    Disclaimer: This is only for you mom :DDDDD
+                </p>   
+
+
+        </div>
+        </span>
+        
+        
+    </footer>
+</html>
+      

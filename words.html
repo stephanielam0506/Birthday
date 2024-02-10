@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Images</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.cdnfonts.com/css/noto-sans-thaana" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    </head>
+
+    <body onload="startTime()">
+        <header>
+            <h1>
+                MOM's birthday
+            </h1>
+            <p id="date">FEB 10, 2024 </p>
+            <div id="txt"></div>
+            <script>
+                function startTime() {
+                  const today = new Date();
+                  let h = today.getHours();
+                  let m = today.getMinutes();
+                  let s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                  setTimeout(startTime, 1000);
+                }
+                
+                function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+                }
+            </script>
+
+        </header>
+
+    <main>
+        <nav>
+            <div class="nav" id="myNav">
+                <a class='button' href="index.html">Overview</a>
+                <a class='more' href="image.html">Images</a>
+                <a class='button' href="words.html">Words</a>
+                <a class='button' href="contact.html">Contact</a>
+            </div>                       
+        </nav>
+        <h3>
+          LOVE, to me is not just words, but actions and accompaniment.
+        </h3>
+      <button type="button" class="collapsible">Some words I want to say.</button>
+      <div class="content"> 
+        <p class="birf" >生日快樂啊貓貓！ 等左我咁耐終於有回覆啦哈哈哈:D其實就唔係唔記得你生日, 而係呢個野
+          搞左我超級無敵耐(我分開左四次黎dup code,但係都未dup好TT。希望你收貨啦, 呢個我真係砌
+          左成8,9個鐘 （誠意有冇先 - 同埋yes寫code就係要咁耐了你而家見到好似唔係好多function其實我已經
+          用左好多心機lol - 同埋可能我仲係bb lv :) 不過yes希望你每日都開開心心咁過, 好多事情都會過到
+          （你已經過左好多難關）我知道我地都好愛大家，亦會繼續愛落去，而我接住落黎都會繼續搵你傾計訴苦同埋
+          要意見(invaluable!!) 而家開始要考慮搵工先至多了解business上既野所以非常之要你指教。 好慶幸做你既女，
+          同你既經歷,自己既經歷,我都非常珍惜,同埋非常多謝你既支持,亦都明白我地都為左大家而去作出改變,我feel到既。
+          希望你既生日願望成真，我亦都相信未來會更好，你會搵到你既如意郎君（真係大把人追-條隊排到尖沙嘴hehehehe)
+        </p>
+      </div>
+
+
+
+
+      <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+      </script>
+    </main>
+  
+  </body>
+
+  <footer>
+    <span>
+        <div class="footcontainer">
+
+            <div class="foot">
+                Feedback?
+                <a  href="">Press here.</a>
+            </div> 
+            <p class="foot">© 2024 Copyright: Stephanie Lam</p>
+
+            <p class="foot">
+                Disclaimer: This is only for you mom :DDDDD
+            </p>   
+
+
+    </div>
+    </span>
+    
+    
+</footer>
+
+</html>
