@@ -87,15 +87,17 @@ a {
 /* Style the links inside the navigation bar */
 .nav a{
   display: inline-block;
-  width: 95px;
+  width: 80px;
   color: #cfd5dc;
   background-color: rgb(95, 109, 175);
   text-align: center;
-  padding: 4px 16px;
+  padding: 4px 10px;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 105px;
   margin-bottom: 8px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 11px;
   border-radius:  100px;
 }
 
