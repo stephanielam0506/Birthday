@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Birthday Card</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    </head>
+
+    <body onload="startTime()">
+        
+        
+        
+        <header>
+            <h1>
+                MOM's birthday
+            </h1>
+            <p id="date">FEB 10, 2024 </p>
+            <div id="txt"></div>
+            <script>
+                function startTime() {
+                  const today = new Date();
+                  let h = today.getHours();
+                  let m = today.getMinutes();
+                  let s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                  setTimeout(startTime, 1000);
+                }
+                
+                function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+                }
+            </script>
+
+        </header>
+        <main>
+            <nav>
+                <div class="nav" id="myNav">
+                    <a class='button' href="#overview">Overview</a>
+                    <a class='more' href="#images">More to come!</a>
+                    <!-- <a class='button' href="#contact">Contact</a>
+                    <a class='button' href="#about">About</a> -->
+                </div>                       
+            </nav>
+
+            <div class="bio">
+                <p>         
+                    Full Name: Cassy Cheng
+                </p>
+                <p>
+                    Profession/Title: Entrepreneur and Philanthropist
+                </p>
+                <p>
+                    About: Cassy Cheng is a renowned entrepreneur and philanthropist known for her dedication to innovation and social impact. 
+                    With a strong background in business and a passion for giving back to the community, Cheng has made significant strides in both the corporate and philanthropic sectors.
+                    Besides her profession, she is also a great scam fighter, where she embarks on the journey on spotting and calling out scammers on dating apps.
+                    Despite how life throws challenges at her, she confronts and makes her way through them, in which her success story has been a great inspiration to not only people around her
+                    but among the humanitarian organization she serves in.
+                </p>
+                <p>
+                    Her dedicated effort put into not only her life but also other people lives will be long remembered. This website
+                    is a record, an appreciation, and a celebration of her coming to this world and bringing us joy and love.
+                </p>
+                <ul>
+                    Relevant profiles:
+                    <li><a href="https://www.facebook.com/cassy.cheng">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/cassy-cheng-7720225a/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/cassy_oggy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                </ul>
+                <p>
+                    Disclaimer: This is only for jokes :DDDDD
+                </p>
+                <h5>
+                    But yes Happy Birthday Mom (also Happy Lunar New Year) and I wish all the enjoyable
+                     experiences waiting ahead of you!!! Can't express how much I love you (so I tried making a website hahaha)
+                </h5>
+            </div>
+            
+
+            <h2>
+                Don't we all love to look back for some laughters
+            </h2>
+            <div class="contanier">
+                <div class="image-slideshow">
+                    <div class="image fade">
+                        <img  src="img/overview.jpeg">
+                        <p>GIVE ME SOM MORE OF THAT SMILE</p>
+                    </div>
+                    <div class="image fade">
+                        <img  src="img/food.jpeg">
+                        <p>WE LOVE DA FOOD</p>
+                    </div>
+                    <div class="image fade">
+                        <img  src="img/hardwork.jpeg">
+                        <p> MAMA IN DA ZONEEEE</p>
+                    </div>
+                    <div class="image fade">
+                        <img src="img/wifCream.jpeg">
+                        <p>WE LOVE CREAMIE</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let index = 0;
+                displayImages();
+                function displayImages() {
+                let i;
+                const images = document.getElementsByClassName("image");
+                for (i = 0; i < images.length; i++) {
+                    images[i].style.display = "none";
+                }
+                index++;
+                if (index > images.length) {
+                    index = 1;
+                }
+                images[index-1].style.display = "block";
+                setTimeout(displayImages, 2000); 
+                }
+            </script>
+            
+            <button class="btn btn-secondary">
+                YES CLICK ON ME
+            </button>
+            
+            <button class="btn">
+                More content
+            </button>
+            <script>
+                let but = document.getElementsByClassName('btn');
+                but.
+            </script>
+            <p class="words">
+                some words I want to say.
+            </p>
+            <h2>
+                LOVE is not from 
+            </h2>
+            <p>
+                Happy birthday maomao, I'm really
+            </p>
+        </main>
+        
+    </body>
+
+</html>
